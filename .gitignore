@@ -6,4 +6,5 @@ uploadPipeline.sh
 /figures/
 
 # System files
+/.venv/
 .DS_STORE
