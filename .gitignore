@@ -1,5 +1,9 @@
-# ignore all but python files
+# Ignore all but python files
 /HW*/latex/
+uploadPipeline.sh
+
+# Ignore figure outputs
+/figures/
 
 # System files
 .DS_STORE

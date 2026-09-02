@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -43,6 +44,10 @@ if __name__ == "__main__":
     plt.title('Monte Carlo Estimation of P(X^2 + Y^2 < Z and Z^2 > XY)')
     plt.legend()
     plt.grid(True, which="both", ls="--", alpha=0.5)
+
+    # Save figure to file system
+    os.makedirs("figures", exist_ok=True)
+    plt.savefig("figures/HW1-Problem-6-Figure.png", dpi=300, bbox_inches="tight")
 
     # Display Plot
     plt.show()
