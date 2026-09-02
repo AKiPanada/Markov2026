@@ -31,6 +31,9 @@ if __name__ == "__main__":
     # Analytical value calculated in 6a
     analytical_val = (23 * np.pi) / 192
 
+    # Show info in terminal for reference
+    print("Analytic value: ", analytical_val, "\nFinal error:", abs(estimates[-1] - analytical_val))
+
     # Plotting
     plt.figure(figsize=(10, 6))
     plt.semilogx(N_values, estimates, marker='o', linestyle='-', label='Monte Carlo Estimate')
