@@ -1,5 +1,5 @@
 # Ignore all but python files
-/HW*/latex/
+/HW*/
 uploadPipeline.sh
 
 # Ignore figure outputs
