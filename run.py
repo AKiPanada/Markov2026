@@ -8,8 +8,11 @@ VENV = ROOT / ".venv"
 
 # Find Python files, excluding this launcher
 python_files = sorted(
-    p for p in ROOT.glob("*.py")
-    if p.name != Path(__file__).name
+    (
+        p for p in ROOT.glob("*.py")
+        if p.name != Path(__file__).name
+    ),
+    key=lambda p: p.name.replace("-", "_").lower()
 )
 
 if not python_files:
