@@ -25,4 +25,4 @@ Depending on your setup.
 
 The script includes a build-in GUI that allows you to select which python file to run easily. 
 
-This script is designed to work on across Macos, Linux, and Windows.
+This script is designed to work on across MacOs, Linux, and Windows.
