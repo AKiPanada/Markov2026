@@ -23,6 +23,6 @@ python3 run.py
 ```
 Depending on your setup.
 
-The script includes a build-in GUI that allows you to select which python file to run easily. 
+The script includes a built-in GUI that allows you to select which python file to run easily. 
 
 This script is designed to work on across MacOs, Linux, and Windows.
