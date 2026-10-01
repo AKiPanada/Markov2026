@@ -66,7 +66,7 @@ for t_check in [100, 1000, 10000]:
     print(f"{t_check:<8}{val_s2:<12.5f}{val_s1_sq:<12.5f}{val_s2 - val_s1_sq:<15.5f}")
 
 
-plt.figure(figsize=(9, 6))
+plt.figure(figsize=(10, 6))
 
 plt.loglog(t_vals, S1, label=f'$S_1(t)$ Simulated (fit $\\beta_1 = {beta1:.3f}$)', color='blue', lw=1.5)
 plt.loglog(t_vals, S1_continuum, 'k--', label='$S_1(t)$ Continuum Prediction', lw=1.5)
