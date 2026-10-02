@@ -109,7 +109,7 @@ plt.tight_layout()
 
 # Save figure to file system
 os.makedirs("figures", exist_ok=True)
-plt.savefig("figures/HW3-Problem-4-Figure.png", dpi=300, bbox_inches="tight")
+plt.savefig("figures/HW4-Problem-4-Figure.png", dpi=300, bbox_inches="tight")
 
 # Display figure
 plt.show()
