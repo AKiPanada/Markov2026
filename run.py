@@ -2,9 +2,12 @@ import os
 import subprocess
 import sys
 from pathlib import Path
+import re
 
 ROOT = Path(__file__).parent
 VENV = ROOT / ".venv"
+
+# Find Python files, excluding this launcher
 
 # Find Python files, excluding this launcher
 python_files = sorted(
@@ -12,7 +15,7 @@ python_files = sorted(
         p for p in ROOT.glob("*.py")
         if p.name != Path(__file__).name
     ),
-    key=lambda p: p.name.replace("-", "_").lower()
+    key=lambda p: tuple(map(int, re.findall(r'\d+', p.stem)))
 )
 
 if not python_files:
